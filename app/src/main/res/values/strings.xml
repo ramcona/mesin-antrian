@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Antrians</string>
+    <string name="default_notification_channel_id">mpl</string>
+    <string name="default_activity">Default Activity</string>
+
+    <string name="teks_gagal_internet">Terjadi kesalahan,periksa internet anda</string>
+    <string name="teks_gagal_kesalahan">Terjadi Kesalahan, ulangi beberapa saat lagi</string>
+    <string name="mohon_tunggu">Mohon Tunggu…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="lewati">Lewati</string>
+    <string name="deskripsi_pada_menu_konsen_ini_untuk_di_jelaskan_lebih_lanjut_dan_untuk_menjelaskan_fitur_fitur_oleh_aplikator_ke_pada_pengguna_dan_di_baca_lagi_oleh_penguna">Deskripsi pada menu konsen ini untuk di jelaskan lebih lanjut dan untuk menjelaskan fitur fitur oleh aplikator ke pada pengguna dan di baca lagi oleh penguna</string>
+    <string name="page_satu">Page Satu</string>
+    <string name="selesai">Selesai</string>
+    <string name="nama_tempat">Nama Tempat</string>
+    <string name="c_191">C - 191</string>
+    <string name="_0">0</string>
+    <string name="kembali">Kembali</string>
+    <string name="panggil">Panggil</string>
+    <string name="lengkapi_data_untuk_mesin_antrian">Lengkapi Data Untuk Mesin Antrian</string>
+    <string name="silahkan_lengkapi_data_untuk_mesin_antrian">Silahkan lengkapi data untuk mesin antrian</string>
+    <string name="nama_loket">Nama Loket</string>
+    <string name="_1">1</string>
+    <string name="administrator">Administrator</string>
+    <string name="nama_anda">Nama Anda</string>
+    <string name="hint_rs_sekolah">"Rumah Sakit Citra "</string>
+    <string name="simpan">Simpan</string>
+    <string name="suara_panggilan">Suara Panggilan</string>
+    <string name="lengkapi_data">Lengkapi data anda</string>
+    <string name="loket_">Loket %s</string>
+    <string name="kode_antrian">Kode Antrian (Opsional)</string>
+    <string name="hint_kode_antri">A / B / C</string>
+    <string name="deskripsi_kode_antri">Kode antrian digunakan bila ada kode sebelum nomor antrian, misal bila anda mengisi C maka antrian yang akan di panggil C - 001</string>
+    <string name="layar_tetap_menyala">Layar tetap menyala ketika menggunkan aplikasi</string>
+    <string name="reset">Reset</string>
+    <string name="nomor_antrian">Nomor Antrian</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="minimal_1">Minimal antrian 1</string>
+    <string name="tidak_ada_riwayat_pemanggilan_antrian">Tidak ada riwayat pemanggilan antrian</string>
+    <string name="riwayat">Riwayat Antrian</string>
+    <string name="reset_antrian">Reset Antrian</string>
+    <string name="tombol_reset_antrian_ada_di_pengaturan">Tombol reset antrian ada di pengaturan</string>
+    <string name="ganti_hari">Sekarang sudah berganti hari, apakah anda ingin me-reset ulang nomor antrian kembali ke 1 atau melanjutkan nomor antrian ke %s</string>
+    <string name="tetap">Tetap</string>
+</resources>

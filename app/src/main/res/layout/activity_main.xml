@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_div"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.activity.main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo_antrian" />
+
+        <ImageView
+            android:layout_toLeftOf="@+id/main_img_seting"
+            android:id="@+id/main_img_riwayat"
+            android:src="@drawable/ic_history"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_height="@dimen/_25sdp"/>
+
+        <ImageView
+            android:id="@+id/main_img_seting"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_gear"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_height="@dimen/_25sdp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/main_tv_loket"
+            android:textColor="@color/dark"
+            android:textAlignment="center"
+            android:text="@string/nama_tempat"
+            style="@style/text_bold_14_match"/>
+        <TextView
+            android:id="@+id/main_tv_lokasi"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_below="@+id/main_tv_loket"
+            android:textColor="@color/dark"
+            android:textAlignment="center"
+            android:text="@string/nama_tempat"
+            style="@style/text_reg_12_match"/>
+
+        <TextView
+            android:id="@+id/main_tv_antrian"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:layout_centerInParent="true"
+            android:text="@string/_0"
+            style="@style/text_bold_30_match"/>
+
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@+id/mainAds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1409435899101504/6354528005">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        style="@style/text_reg_8"
+        android:textAlignment="center"
+        android:text="@string/tombol_reset_antrian_ada_di_pengaturan"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/abu2"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/main_img_kembali"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_return"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"/>
+            <TextView
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                style="@style/text_reg_10"
+                android:text="@string/kembali"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/main_img_panggil"
+                android:src="@drawable/ic_support"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"/>
+            <TextView
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                style="@style/text_reg_10"
+                android:text="@string/panggil"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/main_img_lanjut"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_next"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"/>
+            <TextView
+                android:textColor="@color/status_green_old"
+                android:layout_gravity="center"
+                style="@style/text_reg_10"
+                android:text="@string/lanjut"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

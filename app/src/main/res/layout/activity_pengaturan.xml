@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.pengaturan.PengaturanActivity">
+    
+    <include layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+            
+
+            <LinearLayout
+                android:id="@+id/div_tlp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+
+                <TextView
+                    style="@style/text_reg_10"
+                    android:text="@string/nama_loket"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@drawable/background_border_abu1">
+
+                    <EditText
+                        android:id="@+id/pengaturan_edt_loket"
+                        style="@style/editTextEntryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/dark"
+                        android:singleLine="true"
+                        android:hint="@string/_1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_reg_10"
+                    android:text="@string/administrator"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@drawable/background_border_abu1">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:id="@+id/pengaturan_edt_admin"
+                        style="@style/editTextEntryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/dark"
+                        android:hint="@string/nama_anda"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_reg_10"
+                    android:text="@string/nama_tempat"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@drawable/background_border_abu1">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:id="@+id/pengaturan_edt_tempat"
+                        style="@style/editTextEntryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/dark"
+                        android:hint="@string/hint_rs_sekolah"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_reg_10"
+                    android:text="@string/kode_antrian"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@drawable/background_border_abu1">
+
+                    <EditText
+                        android:textAllCaps="true"
+                        android:singleLine="true"
+                        android:id="@+id/pengaturan_edt_kode"
+                        style="@style/editTextEntryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/dark"
+                        android:hint="@string/hint_kode_antri"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_margin="@dimen/_5sdp"
+                    style="@style/text_reg_8"
+                    android:text="@string/deskripsi_kode_antri"/>
+
+                <TextView
+                    style="@style/text_reg_10"
+                    android:text="@string/nomor_antrian"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@drawable/background_border_abu1">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:id="@+id/pengaturan_edt_nomor"
+                        style="@style/editTextEntryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparant"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/dark"
+                        android:inputType="number"
+                        android:hint="@string/_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        style="@style/text_reg_10"
+                        android:text="@string/suara_panggilan"
+                        android:textColor="@color/dark"/>
+
+                    <Switch
+                        android:id="@+id/pengaturan_switch"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        style="@style/text_reg_10"
+                        android:text="@string/layar_tetap_menyala"
+                        android:textColor="@color/dark"/>
+
+                    <Switch
+                        android:id="@+id/pengaturan_switch_layar"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pengaturan_div_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_shape_primary"
+                        android:gravity="center"
+                        android:text="@string/simpan"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pengaturan_div_reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/reset_antrian"
+                        android:fontFamily="@font/inter_bold"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
